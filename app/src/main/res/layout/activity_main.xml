@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.aedr2.petagram3.MainActivity"
+    android:background="@color/accent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include android:id="@+id/miActionBar"
+            layout="@layout/actionbar"></include>
+
+        <!--Recycler view-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMascotas"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/miActionBar"
+            android:layout_marginLeft="@dimen/margenIzquierdo"
+            android:layout_marginTop="@dimen/margenIzquierdo"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <!--<android.support.design.widget.FloatingActionButton
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@mipmap/camara"
+            android:id="@+id/fab"
+            app:backgroundTint="@color/primary">
+
+        </android.support.design.widget.FloatingActionButton>-->
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

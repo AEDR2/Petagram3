@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/miActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/primary"
+    android:elevation="@dimen/elevationActionBar"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/Theme.AppCompat.Light"
+    >
+
+    <android.support.v7.view.menu.ActionMenuItemView
+        android:id="@+id/amvPaw"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/paw"
+        android:onClick=""
+        />
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name2"
+        android:textAlignment="center"
+        android:textSize="@dimen/letraTitulo" />
+
+
+    <android.support.v7.view.menu.ActionMenuItemView
+        android:id="@+id/amvStar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/estrella"/>
+
+</android.support.v7.widget.Toolbar>
